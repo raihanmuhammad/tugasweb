@@ -1,0 +1,287 @@
+body{
+  margin-top: 0px;
+  background-color: rgb(250, 250, 250);
+  font-family:sans-serif;
+}
+@font-face {
+  font-family:  pakeBebas;
+  src: url(font/BebasNeue.otf);
+}
+.menu{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: rgb(255, 215, 0);
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+nav{
+  display: flex;
+}
+.daftarMenu{
+  width: 25%;
+  display: inline-flex;
+}
+.daftarMenu a{
+  margin: auto;
+  color: #01091d;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: pakeBebas;
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/alone.jpg);
+  background-size: cover;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.layerGelap{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.home h1{
+  margin-top: 0px;
+  font-size: 80px;
+  font-family: pakeBebas;
+  font-weight: normal;
+  font-variant: small-caps;
+}
+.semuanya{
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 1000px;
+  display: block;
+}
+.about{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.teksKiri{
+  display: block;
+}
+.teksKiri p{
+  text-align: justify;
+}
+.ctaKiri a{
+  text-decoration: none;
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background-color: lightgreen;
+  display: block;
+  border: 1px solid transparent;
+  padding: 15px 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.ctaKiri a:hover{
+  background-color: transparent;
+  border-color: lightgreen;
+  color: lightgreen;
+}
+.gallery{
+  background-color: #3f8;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 3px;
+  box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+}
+.kumpulanGambar{
+  max-width: 480px;
+  overflow-x: hidden;
+  margin: 10px;
+  min-width: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+@keyframes slideShow {
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  30%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  50%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  90%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  90%{
+    left: -400%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+.kumpulanGambar figure{
+  z-index: 0;
+  position: relative;
+  width: 500%;
+  margin: 0;
+  top: 0;
+  animation: slideShow 25s infinite 0s;
+}
+.kumpulanGambar figure img{
+  width: 20%;
+  float: left;
+}
+.teksKanan{
+  margin-right: 50px;
+  display: block;
+  text-align: justify;
+}
+.ctaKanan{
+
+}
+.ctaKanan a:hover{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.ctaKanan a{
+  text-decoration: none;
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background-color: deepskyblue;
+  display: block;
+  border: 1px solid transparent;
+  padding: 15px 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.contact{
+  padding: 25px 0px 20px;
+  /*float: left;*/
+}
+.sosialMedia{
+  display: flex;
+}
+.teksTengah{
+  text-align: center;
+}
+.sosialMedia div{
+  display: block;
+  margin: auto;
+  width: 25%;
+  text-align: center;
+}
+footer{
+  clear: both;
+  text-align: center;
+  background-color: #776767;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+.view{
+  margin: 1em;
+  width: 210px;
+  height: 210px;
+}
+.view a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: transparent;
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
+}
+.view a:hover{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 4em rgba(0, 0, 0, 0.9);
+}
+.form_contact{
+	display:grid;
+	grid-template-colums:1fr 1fr;
+}
+#myform{
+	display:grid;
+	grid-template-colums:1fr 1fr;
+	grid-gap:20px;
+}
+.full-width{
+	grid-columns:1/2;
+}
+.form_contact label{
+	display:block;
+}
+.form_contact p{
+	margin:0;
+}
+.form_contact button, .form_contact input, .form_contact textarea{
+	padding:1em;
+}
+button{
+	background:lightgrey;
+	width:40%;
+	border:0;
+}
+button:hover, button:focus{
+	background:#09F;
+	outline:0;
+}
+input:focus, textarea:fokus{
+	outline:3px solid gold;
+}
+.artikel{
+	/*background:#ffffff;*/
+	/*padding:10px;*/
+	margin-bottom:20px;
+	/*overflow:hidden;*/
+  float: left;
+}
+#sidebar{
+	width:270px;
+	float:right;
+}

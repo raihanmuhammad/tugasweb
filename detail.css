@@ -1,0 +1,215 @@
+body{
+  margin-top: 0px;
+  background-color: rgb(250, 250, 250);
+  font-family:sans-serif;
+}
+@font-face {
+  font-family:  pakeBebas;
+  src: url(font/BebasNeue.otf);
+}
+.menu{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: rgb(255, 215, 0);
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+nav{
+  display: flex;
+}
+.daftarMenu{
+  width: 25%;
+  display: inline-flex;
+}
+.daftarMenu a{
+  margin: auto;
+  color: #01091d;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: pakeBebas;
+}
+.home{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/alone.jpg);
+  background-size: cover;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.layerGelap{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.home h1{
+  margin-top: 0px;
+  font-size: 80px;
+  font-family: pakeBebas;
+  font-weight: normal;
+  font-variant: small-caps;
+}
+.semuanya{
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-width: 1000px;
+  display: block;
+}
+.about{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.teksKiri{
+  display: block;
+}
+.teksKiri p{
+  text-align: justify;
+}
+.ctaKiri a{
+  text-decoration: none;
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background-color: lightgreen;
+  display: block;
+  border: 1px solid transparent;
+  padding: 15px 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.ctaKiri a:hover{
+  background-color: transparent;
+  border-color: lightgreen;
+  color: lightgreen;
+}
+.gallery{
+  background-color: #3f8;
+  text-align: right;
+  display: inline-flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 3px;
+  box-shadow:  2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.kumpulanGambar{
+  max-width: 480px;
+  overflow-x: hidden;
+  margin: 10px;
+  min-width: 400px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+@keyframes slideShow {
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  30%{
+    left: -100%;
+  }
+  40%{
+    left: -200%;
+  }
+  50%{
+    left: -200%;
+  }
+  60%{
+    left: -300%;
+  }
+  90%{
+    left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  90%{
+    left: -400%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+.kumpulanGambar figure{
+  z-index: 0;
+  position: relative;
+  width: 500%;
+  margin: 0;
+  top: 0;
+  animation: slideShow 25s infinite 0s;
+}
+.kumpulanGambar figure img{
+  width: 20%;
+  float: left;
+}
+.teksKanan{
+  margin-right: 50px;
+  display: block;
+  text-align: justify;
+}
+.ctaKanan{
+
+}
+.ctaKanan a:hover{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.ctaKanan a{
+  text-decoration: none;
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  background-color: deepskyblue;
+  display: block;
+  border: 1px solid transparent;
+  padding: 15px 10px;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.contact{
+  padding: 25px 0px 20px;
+}
+.sosialMedia{
+  display: flex;
+}
+.teksTengah{
+  text-align: center;
+}
+.sosialMedia div{
+  display: block;
+  margin: auto;
+  width: 25%;
+  text-align: center;
+}
+footer{
+  text-align: center;
+  background-color: #776767;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
